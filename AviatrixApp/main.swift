@@ -27,6 +27,26 @@ func fly(myPlane : Aviatrix) {
     
     for (index, city) in destinations.enumerated() {
         let distance = myPlane.distanceTo(begin: myPlane.location, target: city)
+        // i = 0
+        // if i >= distance --> print that city and distance
+        // for city, cycle through the dictionary to find the city that matches the distance
+        //  if distance matches city's distance, use that city
+        // i = city's distance
+        // repeat until you get through all cities
+        let counter = 0
+        for cityArray in myPlane.data.knownDistances {
+            if cityArray.key == myPlane.location {
+                print("cityArray: \(cityArray)")
+                print("hello \(cityArray.value)")
+                let numbers = cityArray.value
+                print("hi \(numbers)")
+            //    let cityHere = [myPlane.location]
+//                for cityMilePair in cityArray {
+//                    print("cityMilePair: \(cityMilePair)")
+//                }
+            }
+            
+        }
         print("\(index): \(city), \(distance) miles")
     }
     
