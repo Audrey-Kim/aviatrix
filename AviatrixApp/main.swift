@@ -33,13 +33,13 @@ func fly(myPlane : Aviatrix) {
         //  if distance matches city's distance, use that city
         // i = city's distance
         // repeat until you get through all cities
-        let counter = 0
+        var counter = 0
         for cityArray in myPlane.data.knownDistances {
             if cityArray.key == myPlane.location {
-                print("cityArray: \(cityArray)")
-                print("hello \(cityArray.value)")
-                let numbers = cityArray.value
-                print("hi \(numbers)")
+                print(cityArray)
+                for cityMilePair in cityArray![]{
+
+                }
             //    let cityHere = [myPlane.location]
 //                for cityMilePair in cityArray {
 //                    print("cityMilePair: \(cityMilePair)")
